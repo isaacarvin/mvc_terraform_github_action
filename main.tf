@@ -1,4 +1,14 @@
 #test
+terraform {
+  cloud {
+    organization = "ter_mvc_api_token"
+
+    workspaces {
+      name = "FJXXVy04FAllJA.atlasv1.pwsz1jO32oK5hlsgwe3arMOD4z6JygHyZj0rl14yG9GwQITcGmWdMcIgAfgrXONV0a4"
+    }
+  }
+}
+
 provider "aws" {
   version = "~> 2.0"
   access_key = var.access_key
